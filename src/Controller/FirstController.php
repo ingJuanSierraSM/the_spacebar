@@ -10,7 +10,7 @@ class FirstController
     /**
      * @Route("/")
      */
-    public function homepage() 
+    public function homepage(): Response
     {
         return new Response("<h1>Hello world!</h1> <br> <h2>By Ssimor</h2>");
     }
@@ -18,7 +18,7 @@ class FirstController
     /**
      * @Route("/greet/{person}")
      */
-    public function greet($person)
+    public function greet($person): Response
     {
         return new Response("<h2> Hi $person!</h2> <br> <h3>Welcome to the Ssimor 'spacebar' </h3>");
     }
